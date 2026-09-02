@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#123d2b" />
+    <title>AgriVision - Farmer Continuity Platform</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">A</div>
+          <div><strong>AgriVision</strong><span>ASEAN continuity platform</span></div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="nav-item active" data-page="overview"><span>01</span>Overview</button>
+          <button class="nav-item" data-page="sustain"><span>02</span>Sustain</button>
+          <button class="nav-item" data-page="attract"><span>03</span>Attract</button>
+          <button class="nav-item" data-page="bridge"><span>04</span>Bridge</button>
+          <button class="nav-item" data-page="analytics"><span>05</span>Analytics</button>
+        </nav>
+
+        <div class="sidebar-note">
+          <span class="live-dot"></span>
+          <div><strong>Demonstration mode</strong><small>No real equipment is controlled.</small></div>
+        </div>
+      </aside>
+
+      <div class="main-area">
+        <header class="topbar">
+          <button class="menu-button" id="menuButton" aria-label="Toggle menu">☰</button>
+          <div>
+            <p class="eyebrow">SDG 2 · ZERO HUNGER</p>
+            <h1 id="pageTitle">Regional Overview</h1>
+          </div>
+          <div class="topbar-actions">
+            <label class="select-wrap">
+              <span>Country context</span>
+              <select id="countrySelect" aria-label="Country context">
+                <option value="MM">Myanmar</option>
+                <option value="BN">Brunei Darussalam</option>
+                <option value="KH">Cambodia</option>
+                <option value="ID">Indonesia</option>
+                <option value="LA">Lao PDR</option>
+                <option value="MY">Malaysia</option>
+                <option value="PH">Philippines</option>
+                <option value="SG">Singapore</option>
+                <option value="TH">Thailand</option>
+                <option value="TL">Timor-Leste</option>
+                <option value="VN">Viet Nam</option>
+              </select>
+            </label>
+            <div class="avatar" title="Demo programme user">AV</div>
+          </div>
+        </header>
+
+        <main>
+          <section class="page active" id="overview">
+            <article class="hero-card">
+              <div class="hero-copy">
+                <span class="badge light">Farmer continuity, not replacement</span>
+                <h2>Supporting today's farmers.<br />Preparing tomorrow's agriculture.</h2>
+                <p>One regional platform connecting field support, realistic youth pathways and consent-based knowledge transfer across all 11 ASEAN Member States.</p>
+                <div class="hero-actions">
+                  <button class="primary-button" data-go="sustain">Start farmer support</button>
+                  <button class="secondary-button" data-go="attract">Explore youth pathways</button>
+                </div>
+              </div>
+              <div class="continuity-visual" aria-label="Three connected AgriVision tracks">
+                <div class="orbit orbit-one"><span>Sustain</span></div>
+                <div class="orbit orbit-two"><span>Attract</span></div>
+                <div class="orbit orbit-three"><span>Bridge</span></div>
+                <div class="visual-core">AV<small>Continuity</small></div>
+              </div>
+            </article>
+
+            <div class="section-heading">
+              <div><p class="eyebrow green">THREE CONNECTED TRACKS</p><h2>From immediate support to long-term continuity</h2></div>
+              <p>Each track has a distinct purpose, but confirmed actions and outcomes connect the full journey.</p>
+            </div>
+
+            <div class="track-grid">
+              <article class="track-card sustain-card">
+                <div class="track-number">01</div><span class="track-icon">◌</span>
+                <p class="eyebrow">TRACK 1</p><h3>Sustain</h3>
+                <p>Reduce avoidable workload and uncertainty using field observations, irrigation support and preliminary crop screening.</p>
+                <button data-go="sustain">Open Sustain →</button>
+              </article>
+              <article class="track-card attract-card">
+                <div class="track-number">02</div><span class="track-icon">↗</span>
+                <p class="eyebrow">TRACK 2</p><h3>Attract</h3>
+                <p>Let young people compare realistic pathways, assumptions, risks and five-year farm scenarios before investing.</p>
+                <button data-go="attract">Open Attract →</button>
+              </article>
+              <article class="track-card bridge-card">
+                <div class="track-number">03</div><span class="track-icon">∞</span>
+                <p class="eyebrow">TRACK 3</p><h3>Bridge</h3>
+                <p>Turn experience into continuity through explainable suggestions, mutual consent and structured mentorship.</p>
+                <button data-go="bridge">Open Bridge →</button>
+              </article>
+            </div>
+
+            <div class="overview-grid">
+              <article class="panel system-flow">
+                <div class="panel-heading"><div><p class="eyebrow green">SYSTEM FLOW</p><h3>Sense → Check → Recommend → Verify</h3></div><span class="badge">Explainable</span></div>
+                <div class="flow-row">
+                  <div><b>1</b><span>Sense</span><small>User or sensor input</small></div><i>→</i>
+                  <div><b>2</b><span>Check</span><small>Quality and permissions</small></div><i>→</i>
+                  <div><b>3</b><span>Recommend</span><small>Rules and safeguards</small></div><i>→</i>
+                  <div><b>4</b><span>Verify</span><small>Action and outcome</small></div>
+                </div>
+              </article>
+              <article class="panel evidence-panel">
+                <div class="panel-heading"><div><p class="eyebrow green">EVIDENCE STATUS</p><h3>Data stays honest</h3></div></div>
+                <div class="status-list">
+                  <div><span class="status-dot observed"></span><b>Observed</b><small>Verified measurement</small></div>
+                  <div><span class="status-dot calculated"></span><b>Calculated</b><small>Formula result</small></div>
+                  <div><span class="status-dot scenario"></span><b>Scenario</b><small>Illustrative future case</small></div>
+                  <div><span class="status-dot missing"></span><b>Missing</b><small>Never replaced with zero</small></div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="page" id="sustain">
+            <div class="intro-row">
+              <div><span class="badge sustain-badge">Track 1 · Sustain</span><h2>Field support without removing farmer control</h2><p>Enter an observation, understand the recommendation, then decide what action to take.</p></div>
+              <div class="safety-callout"><b>Decision support only</b><span>AgriVision does not activate a real pump or confirm a crop disease.</span></div>
+            </div>
+
+            <div class="two-column">
+              <article class="panel">
+                <div class="panel-heading"><div><p class="eyebrow green">IRRIGATION CHECK</p><h3>Current field observation</h3></div><span class="badge">Manual input</span></div>
+                <form id="irrigationForm" class="form-grid">
+                  <label class="range-field full"><span>Soil moisture <strong id="moistureValue">24%</strong></span><input id="moisture" type="range" min="0" max="100" value="24" /><small>Prototype threshold: 30%</small></label>
+                  <label><span>Temperature</span><div class="input-unit"><input id="temperature" type="number" value="31" min="-20" max="70" /><i>°C</i></div></label>
+                  <label><span>Nitrogen</span><div class="input-unit"><input id="nitrogen" type="number" value="42" min="0" /><i>ppm</i></div></label>
+                  <label class="full"><span>Confirmed automated cycles this week</span><input id="cycles" type="number" value="4" min="0" /></label>
+                  <button class="primary-button full" type="submit">Generate guarded recommendation</button>
+                </form>
+              </article>
+              <article class="panel result-panel" id="irrigationResult" aria-live="polite">
+                <div class="empty-result"><span>↯</span><h3>Recommendation will appear here</h3><p>Results include assumptions, risk, confidence and a safe next action.</p></div>
+              </article>
+            </div>
+
+            <div class="two-column crop-section">
+              <article class="panel crop-upload">
+                <div class="panel-heading"><div><p class="eyebrow green">CROP SCREENING</p><h3>Check visible leaf colour patterns</h3></div><span class="badge">OpenCV HSV</span></div>
+                <form id="cropForm">
+                  <label class="drop-zone" id="dropZone">
+                    <input id="cropImage" type="file" accept="image/jpeg,image/png" />
+                    <span class="upload-icon">＋</span><b>Upload a leaf photo</b><small>JPEG or PNG · Maximum 8 MB</small>
+                    <img id="imagePreview" alt="Uploaded crop preview" />
+                  </label>
+                  <button class="primary-button" type="submit">Run preliminary screening</button>
+                </form>
+              </article>
+              <article class="panel result-panel" id="cropResult" aria-live="polite">
+                <div class="empty-result"><span>⌁</span><h3>No image screened</h3><p>The result will be a preliminary colour check, not a confirmed diagnosis.</p></div>
+              </article>
+            </div>
+          </section>
+
+          <section class="page" id="attract">
+            <div class="intro-row">
+              <div><span class="badge attract-badge">Track 2 · Attract</span><h2>Test the idea before making the investment</h2><p>Compare conservative, central and stress scenarios with every assumption visible.</p></div>
+              <div class="safety-callout blue"><b>Illustrative scenarios</b><span>Results are not forecasts, financial advice or guaranteed outcomes.</span></div>
+            </div>
+
+            <div class="simulation-layout">
+              <article class="panel simulation-controls">
+                <div class="panel-heading"><div><p class="eyebrow blue-text">DIGITAL TWIN</p><h3>Scenario inputs</h3></div><span class="badge">5 years</span></div>
+                <form id="simulationForm" class="form-grid">
+                  <label><span>Land area</span><div class="input-unit"><input id="landArea" type="number" value="2" min="0.1" step="0.1" /><i>ha</i></div></label>
+                  <label><span>Initial capital</span><div class="input-unit"><input id="capital" type="number" value="10000" min="1" /><i>USD</i></div></label>
+                  <label><span>Crop price</span><div class="input-unit"><input id="cropPrice" type="number" value="0.50" min="0" step="0.01" /><i>$/kg</i></div></label>
+                  <label><span>Annual operating cost</span><div class="input-unit"><input id="operatingCost" type="number" value="1800" min="0" /><i>USD</i></div></label>
+                  <label><span>Technology investment</span><div class="input-unit"><input id="techInvestment" type="number" value="2200" min="0" /><i>USD</i></div></label>
+                  <label><span>Technology level</span><select id="techLevel"><option>LOW</option><option selected>MEDIUM</option><option>HIGH</option></select></label>
+                  <label class="toggle-field full"><span><b>Climate shock scenario</b><small>Apply the documented demonstration stress assumption</small></span><input id="climateShock" type="checkbox" /><i></i></label>
+                  <button class="primary-button blue-button full" type="submit">Run three scenarios</button>
+                </form>
+              </article>
+              <article class="panel simulation-results" id="simulationResult" aria-live="polite">
+                <div class="empty-result"><span>⌁</span><h3>Ready to simulate</h3><p>Run the model to compare five-year net profit and ROI across three scenarios.</p></div>
+              </article>
+            </div>
+          </section>
+
+          <section class="page" id="bridge">
+            <div class="intro-row">
+              <div><span class="badge bridge-badge">Track 3 · Bridge</span><h2>Experience becomes a living learning pathway</h2><p>Matching suggestions remain private until both people accept and safety checks pass.</p></div>
+              <div class="safety-callout gold"><b>Consent by design</b><span>A match is a suggestion—not an assignment or automatic contact release.</span></div>
+            </div>
+
+            <div class="bridge-flow panel">
+              <div class="bridge-step complete"><b>1</b><span>Profiles opted in</span></div><i>→</i>
+              <div class="bridge-step active"><b>2</b><span>Explainable suggestions</span></div><i>→</i>
+              <div class="bridge-step"><b>3</b><span>Mutual acceptance</span></div><i>→</i>
+              <div class="bridge-step"><b>4</b><span>Learning plan</span></div>
+            </div>
+
+            <div class="bridge-layout">
+              <article class="panel mentor-profile">
+                <div class="panel-heading"><div><p class="eyebrow gold-text">EXPERIENCED FARMER</p><h3>U Min Htet's offer</h3></div><span class="consent-chip">✓ Opted in</span></div>
+                <div class="profile-avatar">MH</div>
+                <dl class="profile-facts"><div><dt>Approximate area</dt><dd>Yangon Region</dd></div><div><dt>Knowledge domains</dt><dd>Rice · Pulses</dd></div><div><dt>Learning plot</dt><dd>2 hectares</dd></div><div><dt>Language</dt><dd>Myanmar · English</dd></div></dl>
+                <button class="primary-button gold-button" id="findMatches">Find consented learners</button>
+              </article>
+              <div class="match-list" id="matchResults">
+                <article class="panel empty-match"><span>∞</span><h3>No suggestions generated yet</h3><p>The engine uses geography, shared crop interests and land-scale preference. Private contacts remain hidden.</p></article>
+              </div>
+            </div>
+          </section>
+
+          <section class="page" id="analytics">
+            <div class="intro-row">
+              <div><span class="badge analytics-badge">Evidence & Analytics</span><h2>Six charts, with no invented numbers</h2><p>The chart structures are ready. Exact approved datasets must be added before bars or country comparisons are displayed.</p></div>
+              <div class="safety-callout purple"><b>Missing ≠ zero</b><span>Unavailable values remain visibly unavailable in charts and exports.</span></div>
+            </div>
+
+            <div class="analytics-summary">
+              <article><span>11</span><b>ASEAN Member States</b><small>Regional scope</small></article>
+              <article><span>6</span><b>Evidence charts</b><small>Source data required</small></article>
+              <article><span>7</span><b>Data statuses</b><small>Honest classification</small></article>
+              <article><span>0</span><b>Invented values</b><small>Intentional safeguard</small></article>
+            </div>
+            <div class="chart-grid" id="chartGrid"><div class="loading-card">Loading chart specifications…</div></div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
+

@@ -1,11 +1,71 @@
-# AgriVision Development Context Kit
+# AgriVision
 
-This folder is the authoritative development context for the AgriVision repository.
-It combines the product-governance requirements from `AgriVision_System_Prompt.pdf`
-with the technical MVP requirements from
-`AgriVision_System_Implementation_Prompt.pdf` and resolves their differences.
+AgriVision is a runnable demonstration MVP for ASEAN farmer continuity. It brings
+together three connected tracks: immediate decision support for current farmers
+(`Sustain`), realistic farming scenarios for interested youth (`Attract`), and
+consent-based knowledge transfer (`Bridge`).
 
-## How the builder should use this kit
+The repository also contains the authoritative development context distilled from
+`AgriVision_System_Prompt.pdf` and
+`AgriVision_System_Implementation_Prompt.pdf`.
+
+> **Demonstration status:** this MVP does not control real equipment, diagnose crop
+> disease, provide financial advice, or release private contact information.
+
+## What works now
+
+- Responsive single-page website covering Overview, Sustain, Attract, Bridge and Analytics.
+- Guarded irrigation recommendation from a manual moisture observation.
+- Real OpenCV HSV image processing for preliminary visible leaf-colour screening.
+- Five-year conservative, central and stress digital-twin scenarios.
+- Explainable mentorship ranking using geography, crop overlap and land scale.
+- Consent filtering and hidden contact details in the matching flow.
+- Six analytics chart specifications that visibly report missing data instead of inventing values.
+- Versioned FastAPI endpoints, standard evidence envelopes and health checks.
+
+## Run locally
+
+### Python
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r backend/requirements.txt
+cd backend
+python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+```
+
+Open <http://127.0.0.1:8000>. API documentation is available at
+<http://127.0.0.1:8000/docs>.
+
+### Docker
+
+```bash
+docker compose up --build
+```
+
+Then open <http://127.0.0.1:8000>.
+
+## Test
+
+```bash
+cd backend
+python -m pytest
+```
+
+## Repository structure
+
+```text
+AgriVision/
+├── backend/          FastAPI application, engines and tests
+├── frontend/         Responsive HTML, CSS and JavaScript interface
+├── context-kit/      Product, architecture, safety and build specifications
+├── docker-compose.yml
+├── .env.example
+└── README.md
+```
+
+## How future builders should use the context kit
 
 1. Read every document in `context-kit/` before changing code.
 2. Inspect the existing repository and preserve working features and user changes.
@@ -48,4 +108,3 @@ help interested youth explore agriculture realistically, and support voluntary,
 consent-based knowledge transfer between generations. It supports SDG 2 - Zero
 Hunger, but it must never claim that the prototype has already produced regional
 impact.
-
